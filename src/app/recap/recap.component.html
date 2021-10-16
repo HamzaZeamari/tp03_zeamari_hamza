@@ -1,0 +1,12 @@
+<div *ngIf="afficher" class="mt-5">
+
+        <p>Vous vous appelez {{ nom }} {{ prenom }}, vous êtes de civilité {{ civi }} vous habitez au {{ adresse }} dans la ville de {{ ville }}
+            en {{ pays }} au code postal : {{ CP }}.
+            Vos coordonnées de téléphones sont les suivantes : {{ tel | telPipe : pays }}
+            De mail : {{ email }}
+            Et votre identifiant : {{ login }}
+        </p>
+           
+           
+
+</div>

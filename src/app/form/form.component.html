@@ -1,0 +1,83 @@
+ <form id="form" novalidate>
+     <div class="row">
+    <label for="nom" class="form-label">
+    Nom:</label>
+    <input type="text" name="nom" id="nom" [(ngModel)]="nom">
+    <div class="wrong-feedback" id="nom_feedback" *ngIf="nom_error">Entrer votre nom</div>
+
+<label for="prenom" class="form-label">
+    Prenom:</label>
+    <input type="text" name="prenom" id="prenom" [(ngModel)]="prenom">
+    <div class="wrong-feedback" id="prenom_feedback" *ngIf="prenom_error">Entrer votre prenom</div>
+
+<label for="adresse" class="form-label">
+    Adresse:</label>
+    <input type="text" name="adresse" id="adresse" [(ngModel)]="adresse">
+    <div class="wrong-feedback" id="adresse_feedback" *ngIf="adresse_error">Entrer votre adresse</div>
+
+<label for="ville" class="form-label">
+    Ville:</label>
+    <input type="text" name="ville" id="ville" [(ngModel)]="ville">
+    <div class="wrong-feedback" id="ville_feedback" *ngIf="ville_error">Entrer votre ville</div>
+
+<label for="CP" class="form-label">
+    CP:</label>
+    <input type="text" name="CP" id="CP" [(ngModel)]="CP">
+    <div class="wrong-feedback" id="CP_feedback" *ngIf="CP_error">Entrer votre code postal</div>
+
+
+<label for="civi" class="form-label">
+    Civilite:</label>
+    <select name="civi" id="civi" class="form-control" [(ngModel)]="civi">
+        <option value="male">H</option>
+        <option value="female">F</option>
+    </select>
+    <div class="wrong-feedback" id="civi_feedback" *ngIf="civi_error">Choisissez</div>
+
+<label for="pays" class="form-label">
+    Pays:
+</label>
+    <select name="pays" id="pays" class="form-control" [(ngModel)]="pays">
+    <option value="France">France</option> 
+    <option value="Algerie">Algerie</option> 
+    <option value="Allemagne">Allemagne</option> 
+    <option value="Royaume-Uni">Royaume-Uni</option> 
+    <option value="Belgique">Belgique</option> 
+    <option value="Espagne">Espagne</option> 
+    <option value="Italie">Italie</option> 
+    <option value="Portugal">Portugal</option> 
+    <option value="Suisse">Suisse</option> 
+    <option value="Luxembourg">Luxembourg</option> 
+</select>
+</div>
+<div class="wrong-feedback" id="pays_feedback" *ngIf="pays_error">Entrer votre pays</div>
+
+<label for="tel" class="form-label">
+    Telephone:</label>
+    <input type="text" name="tel" id="tel" [(ngModel)]="tel">
+    <div class="wrong-feedback" id="tel_feedback" *ngIf="tel_error">Entrer votre numéro de téléphone</div>
+
+<label for="email" class="form-label">
+    Email:</label>
+    <input type="email" name="email" id="email" [(ngModel)]="email">
+    <div class="wrong-feedback" id="email_feedback" *ngIf="email_error">Entrer votre email</div>
+
+<label for="login" class="form-label">
+    Login:</label>
+    <input type="text" name="login" id="login" [(ngModel)]="login">
+    <div class="wrong-feedback" id="login_feedback" *ngIf="login_error">Entrer votre login</div>
+
+<label for="mdp" class="form-label">
+    Mot de passe:</label>
+    <input type="password" name="mdp" id="mdp" [(ngModel)]="mdp">
+    <div class="wrong-feedback" id="mdp_feedback" *ngIf="mdp_error">Entrer votre mdp</div>
+
+<label for="confirm_mdp" class="form-label">
+    Confirmation mot de passe:</label>
+    <input type="password" name="confirm_mdp" id="confirm_mdp" [(ngModel)]="confirm_mdp">
+    <div class="wrong-feedback" id="mdpconf_feedback" *ngIf="mdp_error">Entrer votre mdp</div>
+
+<button type="submit" (click)="onSubmit()">Valider</button>
+
+ </form>   
+    
