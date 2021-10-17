@@ -1,0 +1,14 @@
+[
+    { "nom": "Reebok Classic Leather", "marque": "Reebok", "prix":"80" },
+    { "nom": "Adidas Yeezy Boost 350 v2", "marque": "Adidas", "prix":"300" },
+    { "nom": "Nike Air Force 1 Low", "marque": "Nike", "prix":"200" },
+    { "nom": "Nike Huarache ", "marque": "Nike", "prix":"50" },
+    { "nom": "Nike Air Jordan 1", "marque": "Nike", "prix":"125" },
+    { "nom": "Adidas Stan Smith", "marque": "Adidas", "prix":"54" },
+    { "nom": "Vans Authentic", "marque": "Vans", "prix":"60" },
+    { "nom": "Converse Chuck Taylor Law", "marque": "Converse", "prix":"75" },
+    { "nom": "Nike Air Max 270 ", "marque": "Nike", "prix":"180" },
+    { "nom": "Nike Tanjun", "marque": "Nike", "prix":"95" }
+
+  ]
+  

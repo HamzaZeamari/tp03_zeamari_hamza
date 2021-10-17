@@ -9,6 +9,10 @@ import { HeaderComponent } from './header/header.component';
 import { RecapComponent } from './recap/recap.component';
 import { FormsModule } from '@angular/forms';
 import { TelPipe } from './tel-format.pipe';
+import { ListprodComponent } from './listprod/listprod.component';
+import { SearchComponent } from './search/search.component';
+import { ServicesProd } from './prod.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,13 +22,16 @@ import { TelPipe } from './tel-format.pipe';
     HeaderComponent,
     RecapComponent,
     TelPipe,
+    ListprodComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ServicesProd],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

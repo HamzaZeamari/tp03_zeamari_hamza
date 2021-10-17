@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tp02-zeamari-hamza'`, () => {
+  it(`should have as title 'tp03-zeamari-hamza'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tp02-zeamari-hamza');
+    expect(app.title).toEqual('tp03-zeamari-hamza');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('tp02-zeamari-hamza app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('tp03-zeamari-hamza app is running!');
   });
 });

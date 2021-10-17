@@ -1,0 +1,23 @@
+<div>
+    <div>
+        <label for="marque">Marque : </label>
+        <select name="marque" [(ngModel)]="marque">
+            <option value="tout" selected>Pas de Filtre</option>
+            <option value="Reebok">Reebok</option>
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Vans">Vans</option>
+            <option value="Converse">Converse</option>
+        </select>
+    </div>
+    <div>
+        <label for="prix">Prix : </label>
+        <select name="prix" [(ngModel)]="prix">
+            <option value="tout">Pas de Filtre</option>
+            <option value="inf65">Inférieur à 65</option>
+            <option value="65-125">Entre 65 et 125</option>
+            <option value="sup125">Au delà de 125</option>
+        </select>
+    </div>
+    <button (click)="confirmer()">Confirmer filtre</button>
+</div>
